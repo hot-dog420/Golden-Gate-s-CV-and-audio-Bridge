@@ -22,14 +22,14 @@ Some notes on the parts:
 - Shielded RJ45 cables are needed for the bridges to work. CAT6A or higher. I've run my personal set-up on CAT6A without any issue, but have read that CAT7 or CAT8 cables may give better results because of their separately shielded wire pairs.
 - 1590A enclosures are only required if you're intending to connect to a set-up outside of a eurorack case. Otherwise ignore and order more panel PCBs.
 
-Depending on sourcing of parts, pricing can differ. A pair of GGBs around AUD$22.50 as of Feb 2025 (ex postage).
+Depending on sourcing of parts, pricing can differ. A pair of GGBs costs around AUD$22.50 as of Feb 2025 (excluding postage).
 
 # Ordering PCBs
 Zip folders containing the gerber files to order your own PCBs are provided. What is here should suit all PCB manufacturers, but these designs have only been tested with PCBWay.
 
 Notes on PCB specs:
-- I've printed both the panel and PCB in standard 1.6mm thickness. Both boards are quite small and don't flex much, btu you could print thicker if you plan to be heavy-handed with your boards. Vertical clearance on the Shielded RJ45 connector (J9) should be fine up to 2mm, although this hasn't been tested.
-- Spare the health of yourself and the environment and pick LeadFree HASL for the Surface Finish. I print just the panel in gold ENIG surface finish, which give the copper labelling and outline the gold look. I think looks pretty cool, but adds a lot more to the cost. There's no benefit to printing with ENIG surface finish besides superficial.
+- I've printed both the panel and PCB in standard 1.6mm thickness. Both boards are quite small and don't flex much, but you could print thicker if you plan to be heavy-handed with your boards. Vertical clearance on the Shielded RJ45 connector (J9) should be fine up to 2mm, although this hasn't been tested.
+- Spare the health of yourself and the environment and pick LeadFree HASL for the Surface Finish. I print just the panel in gold ENIG surface finish, which gives the copper labelling and outline the gold look. I think it looks pretty cool, but adds a lot more to the cost. There's no benefit to printing with ENIG surface finish besides superficial.
 - *Note:* Be sure to specify to remove mark on PCB for your order of the panel. If not, you might end up with a job number on the front of your panel.
 
 # PCB Designs
@@ -37,14 +37,14 @@ Files have been provided to edit the designs as you wish. Feel free to do as you
 
 # Build Notes
 Before soldering:
-1. Place all jacks on the PCB (J1-8). *Note:* All jacks share a padded through-hole on the PCB.
+1. Place all jacks on the PCB (J1-8). *Note:* All jacks share a padded through-hole for GND on the PCB.
 2. Place panel over the jacks. This might take some wiggling. If the jacks are completely flush with the panel, don't worry, they should be after the next step.
-3. Place washers and screw nuts onto the jacks. *Careful*, the PCB might feel secure, but it can definitely still fall off.
+3. Place washers and screw nuts onto the jacks. *Careful*, the circuit PCB might feel secure, but it can definitely still fall off from the jacks' pins.
 4. Through the PCB, place the Shielded RJ45 connector (J9). Be sure to push it through so that its black mounting tabs push through the PCB. The connector's little black "wings" should sit just on-top of the panel.
 5. If you're happy with how everything is sitting, start soldering!
 
 Notes for 1590A version builders:
 - If you've never done this before, watch [this video](https://www.youtube.com/watch?v=CYmyW8S2dC8&ab_channel=StompBoxParts).
 - A drill plot has been provided if you're drilling your own enclosure. Make sure the scale of the print is correct by comparing the measurement references with a trusty ruler. Print this out and stick it to the top of your enclosure.
-- For the square hole for the Shielded RJ45 connector (J9), you can take out most of the material with a stepped drill bit and square the corners with a file. *Just a note* that the hole might look square, but it's 1mm taller than it is wide. Height: 16.9mm x Width: 15.9mm. If you have a Dremel, that works great with a wheel cutter. Just be sure not to over-cut the corners.
+- For the square hole for the Shielded RJ45 connector (J9), you can take out most of the material with a stepped drill bit and square the corners with a square file (something around 10-15mm wide that will remove a resonable amount of material). *Just a note* that the hole might look square, but it's 1mm taller than it is wide. Height: 16.9mm x Width: 15.9mm. If you have a Dremel, that works great with a wheel cutter. Just be sure not to over-cut the corners. Making this square hole is by far the most difficult part. Just take your time and keep measuring to make sure you haven't taken too much material off.
 - Drill your enclosure before fitting your parts and soldering the PCB.
