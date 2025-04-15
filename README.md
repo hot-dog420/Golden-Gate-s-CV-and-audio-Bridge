@@ -1,6 +1,6 @@
 # Golden Gate(s, CV and audio) Bridge
 ## A bit about the project
-The Golden Gate(s, CV and audio) Bridge (a.k.a. GGB) is DIY eurorack project in Intellijel 1U that passively bridges two set-ups over ethernet. It was created for modular enthusiasts, but just as handy for electronic musicians trying to build efficiency into the music set-ups. Each module is passive (i.e. requires no power) and easy to put together, even for beginners.
+The Golden Gate(s, CV and audio) Bridge (a.k.a. GGB) is DIY eurorack project in Intellijel 1U (14HP) that passively bridges two set-ups over ethernet. It was created for modular enthusiasts, but just as handy for electronic musicians trying to build efficiency into the music set-ups. Each module is passive (i.e. requires no power) and easy to put together, even for beginners.
 
 With each GGB pair you can route 8 channels of inputs/outputs of gates, CVs or audio over ethernet.
 
