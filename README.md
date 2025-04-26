@@ -65,8 +65,11 @@ If you decide to add a panel-mount RJ45 connector to your own equipment as descr
 | 1 | White and red |
 | 2 | Red |
 | 3 | White and green |
-| 4 | Blue |
+| 4 | Blue | 
 | 5 | White and blue |
 | 6 | Green |
 | 7 | White and brown |
 | 8 | Brown |
+
+# Edits
+**Update 26/04/25** – As suggested in r/synthdiy, I've created a panel to attach to the back of a 1590A enclosure instead of needing to drill out the enclosure. The .kicad_pcb file has been added to the repository under /pcbs. This design is untested. I'll add gerber files to the repositorry once this design is confirmed.
