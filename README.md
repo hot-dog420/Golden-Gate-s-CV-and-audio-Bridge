@@ -15,6 +15,11 @@ If you don't want to build something like this yourself, then I highly suggest l
 ## 1590A Pedal Enclosure
 The PCB has been made so that it can also fit inside the popular Hammond 1590A pedal enclosure. This opens up a whole lot more opportunities besides simply linking two eurorack cases. For example, I've created two sets of pedal enclosure bridges so I can quickly re-patch my modular from my (1) live mixer set-up to my (2) studio recording interface. This way I can re-patch to multi-track recording without much effort if inspiration has struck.
 
+As per a suggestion from u/el_ri on r/synthdiy, I created a PCB panel faceplate to attach to the black of a 1590A enclosure. This give those the option make 1590A versions without the need to drill out an enclosure.
+
+![alt text](images/ggb_1590Apanel1.jpg)
+![alt text](images/ggb_1590Apanel2.jpg)
+
 # BOM Notes
 An Octopart BOM can be found [here](https://octopart.com/bom-tool/3J50GlHH).
 
@@ -33,7 +38,7 @@ Zip folders containing the gerber files to order your own PCBs are provided [her
 Notes on PCB specs:
 - I've printed both the panel and PCB in standard 1.6mm thickness. Both boards are quite small and don't flex much, but you could print thicker if you plan to be heavy-handed with your boards. Vertical clearance on the Shielded RJ45 connector (J9) should be fine up to 2mm, although this hasn't been tested.
 - Spare the health of yourself and the environment and pick LeadFree HASL for the Surface Finish. I print just the panel in gold ENIG surface finish, which gives the copper labelling and outline the gold look. I think it looks pretty cool, but adds a lot more to the cost. There's no benefit to printing with ENIG surface finish besides superficial.
-- *Note:* Be sure to specify to remove mark on PCB for your order of the panel. If not, you might end up with a job number on the front of your panel.
+- *Note:* Be sure to specify to remove mark on PCB for your order of any panels. If not, you might end up with a job number on the front of your panel.
 
 # PCB Designs
 Files have been provided to edit the designs as you wish. Feel free to do as you wish within the license. e.g redesign as a standard 3U module or change labelling to something custom for your set up. Please note: if you're updating the labelling, be sure to update the F.Cu *AND* the F.Mask layers. You might notice that I made this mistake in the modules pictured where the numbers are in "stealth mode". This has been updated in the files provided. Below is an example of what this looks like. *Note*: This is before I rotated the RJ45 connector 90 degrees.
@@ -45,10 +50,14 @@ Before soldering:
 1. Place all jacks on the PCB (J1-8). *Note:* All jacks share a padded through-hole for GND on the PCB.
 2. Place panel over the jacks. This might take some wiggling. If the jacks are completely flush with the panel, don't worry, they should be after the next step.
 3. Place washers and screw nuts onto the jacks. *Careful*, the circuit PCB might feel secure, but it can definitely still fall off from the jacks' pins.
-4. Through the PCB, place the Shielded RJ45 connector (J9). Be sure to push it through so that its black mounting tabs push through the PCB. The connector's little black "wings" should sit just on-top of the panel.
+4. Through the PCB panel, place the Shielded RJ45 connector (J9). Be sure to push it through so that its black mounting tabs push through the PCB. The connector's little black "wings" should sit just on-top of the panel.
 5. If you're happy with how everything is sitting, start soldering!
 
-Notes for 1590A version builders:
+Notes for 1590A version builders who will build with the PCB panel:
+- Follow the instructions above as if it's a regualr eurorack build. The only difference is that you'll put it into an enclosure at the end of the build.
+- Do youself a favour and get some nicer looking screws to fix the panel to the enclosure. 1590As usually come with 4 countersunk screws that are functional, but just don't look right imho.
+
+Notes for 1590A version builders who intend to drill the enclosure:
 - If you've never done this before, watch [this video](https://www.youtube.com/watch?v=CYmyW8S2dC8&ab_channel=StompBoxParts).
 - A [drill plot](files/GGB_drillplot.pdf) has been provided if you're drilling your own enclosure. Make sure the scale of the print is correct by comparing the measurement references with a trusty ruler. Print this out and stick it to the top of your enclosure.
 - For the square hole for the Shielded RJ45 connector (J9), you can take out most of the material with a stepped drill bit and square the corners with a square file (something around 10-15mm wide that will remove a resonable amount of material). *Just a note* that the hole might look square, but it's 1mm taller than it is wide. Height: 16.9mm x Width: 15.9mm. If you have a Dremel, that works great with a wheel cutter. Just be sure not to over-cut the corners. Making this square hole is by far the most difficult part. Just take your time and keep measuring to make sure you haven't taken too much material off.
@@ -72,4 +81,5 @@ If you decide to add a panel-mount RJ45 connector to your own equipment as descr
 | 8 | Brown |
 
 # Edits
-**Update 26/04/25** – As suggested in r/synthdiy, I've created a panel to attach to the back of a 1590A enclosure instead of needing to drill out the enclosure. The .kicad_pcb file has been added to the repository under /pcbs. This design is untested. I'll add gerber files to the repositorry once this design is confirmed.
+**Update 26/04/25** – As suggested in r/synthdiy, I've created a panel to attach to the back of a 1590A enclosure instead of needing to drill out the enclosure. The .kicad_pcb file has been added to the repository under */pcbs*. This design is untested. I'll add gerber files to the repository once this design is confirmed.
+**Update 19/05/25** - The design for the PCB faceplate on a 1590A enclosure came out great. I've include gerbers to this repository and updated this README.
